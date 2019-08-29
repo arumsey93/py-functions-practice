@@ -7,16 +7,29 @@ For numbers which are multiples of both five and seven print "ChickenMonkey".
 To determine if a number can be evenly divided by 5 or 7, use the Python modulo operator.
 '''
 
-import random
+# import random
 
-number = list()
-for i in range(100):
-    number.append(random.randrange(1, 100))
-    if i % 5 == 0 & i % 7 == 0:
-        print("ChickenMonkey")
-    elif i % 5 == 0:
-        print("Chicken")
-    elif i % 7 == 0:
-        print("Monkey")
-    else:
-        print(i)
+# number = list()
+# for i in range(100):
+#     number.append(random.randrange(1, 100))
+#     if i % 5 == 0 and i % 7 == 0:
+#         print("ChickenMonkey")
+#     elif i % 5 == 0:
+#         print("Chicken")
+#     elif i % 7 == 0:
+#         print("Monkey")
+#     else:
+#         print(i)
+
+def chicken_monkey_run():
+    range_to_100 = range(1, 100)
+    for num in range_to_100: 
+        if num % 5 == 0 and num % 7 == 0:
+            print("ChickenMonkey")
+        elif num % 5 == 0:
+            print("Chicken")
+        elif num % 7 == 0:
+            print("Monkey")
+        else:
+            print(num)
+chicken_monkey_run()
